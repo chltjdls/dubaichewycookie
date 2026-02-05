@@ -32,8 +32,27 @@
             margin: 0;
             font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial;
             color: var(--ink);
-            background: radial-gradient(900px 550px at 20% 10%, rgba(255,150,210,.25), transparent 60%), radial-gradient(900px 550px at 85% 15%, rgba(90,220,170,.22), transparent 55%), radial-gradient(900px 650px at 50% 95%, rgba(120,160,255,.18), transparent 60%), linear-gradient(180deg, var(--bg1), var(--bg2));
-            overflow-x: hidden;
+     background:
+  radial-gradient(
+    900px 550px at 20% 10%,
+    rgba(180, 220, 255, 0.35),
+    transparent 60%
+  ),
+  radial-gradient(
+    900px 550px at 85% 15%,
+    rgba(160, 210, 255, 0.28),
+    transparent 55%
+  ),
+  radial-gradient(
+    900px 650px at 50% 95%,
+    rgba(140, 200, 255, 0.22),
+    transparent 60%
+  ),
+  linear-gradient(
+    180deg,
+    #f6fbff,
+    #eef6ff
+  );
         }
 
         a {
@@ -1083,7 +1102,7 @@
             ingKnafeh.checked = state.knafeh;
             ingSalt.checked = state.salt;
             renderAll();
-            toast("환영합니다. 쫀득을 책임질 준비 되셨나요?");
+            toast("Welcome to INNY WORLD");
         }
         init();
     </script>
