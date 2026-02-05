@@ -937,7 +937,7 @@
 
             let extra = "";
             if (state.chewy >= 92) extra = "※ 주의: 화면을 보면 배고파질 수 있음.";
-            if (!state.choco && !state.pista) extra = "초코도 피스타도 없으면… 그건 그냥 ‘의지’임.";
+            if (!state.choco && !state.pista) extra = "초코랑 피스타치오 둘 다 없으면 두쫀쿠임?";
 
             endingText.innerHTML = lines.join(" ") + (extra ? ` <span style="color:#6a4a1f"><b>${extra}</b></span>` : "");
         }
@@ -994,7 +994,7 @@
                 "더 더 굽는다",
                 "또 굽는다",
                 "오븐도 지쳤다",
-                "두바이 소환",
+                "아직도?",
                 "이제 그만…",
                 "오븐 과열중"
             ];
@@ -1006,8 +1006,8 @@
 
             // playful messages
             if (state.bakeCount === 1) toast("예열 완료.");
-            else if (state.bakeCount === 2) toast("쿠키가 ‘쫀득’이라는 단어를 배우는 중…");
-            else if (state.bakeCount === 4) toast("이쯤이면 냄새가 화면 밖으로 나옴.");
+            else if (state.bakeCount === 2) toast("쿠키가 ‘쫀득’해지는 중…");
+            else if (state.bakeCount === 4) toast("이쯤이면 냄새도 날지도.");
             else if (state.bakeCount >= 6) toast("쫀득쿠키 사주세요.");
 
             renderAll();
